@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeEnergyCalculator"
+    android:background="#F1FFF3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/backbutton" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="HOME ENERGY" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="370dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/transportationgraphbox"
+        android:text="CO2 Emission by Home Energy"
+        android:paddingLeft="40dp"
+        android:paddingTop="10dp"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart_home_energy"
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <Spinner
+        android:id="@+id/home_energy_spinner"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:background="@drawable/dropdownbox"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="70dp"
+        />
+
+
+    <FrameLayout
+        android:layout_width="370dp"
+        android:layout_height="290dp"
+        android:background="@drawable/emittedbox2"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO2 emission is calculated as below:"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbon Emission(kg/CO2e)"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energy Use(kWh) x Emission Factor(kg/CO2e)"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity(kWh):"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="110dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CO2e calculated:"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="155dp"/>
+
+        <EditText
+            android:id="@+id/home_energy_quantity_input"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/dropdownbox"
+            />
+        <TextView
+            android:id="@+id/home_energy_output"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dropdownbox"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="150dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="200dp"/>
+        <Button
+            android:id="@+id/date_picker_home_energy"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:padding="0dp"
+            android:backgroundTint="#DFF7E2"
+            android:layout_marginTop="193dp"
+            android:layout_marginStart="130dp" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:padding="0dp"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:backgroundTint="#0068FF"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="80dp"/>
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:padding="0dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:backgroundTint="#0068FF"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="180dp"/>
+
+
+
+    </FrameLayout>
+
+</FrameLayout>

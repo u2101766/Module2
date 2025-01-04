@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Module2</string>
+    <!--SPINNER FOR SETTING GRAPH DATE-->
+    <string-array name="food_graph_option">
+        <item>Daily</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="home_energy_option">
+        <item>Daily</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="transportation_graph_option">
+        <item>Daily</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="waste_graph_option">
+        <item>Daily</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string-array name="water_graph_option">
+        <item>Daily</item>
+        <item>Monthly</item>
+    </string-array>
+<!--SPINNER FOR CALCULATION-->
+    <string-array name="food_options">
+        <item>Chicken</item>
+        <item>Beef</item>
+        <item>Fish</item>
+        <item>Shellfish</item>
+        <item>Rice</item>
+        <item>Noodles</item>
+        <item>Bread</item>
+        <item>Coffee</item>
+        <item>Tea</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+    </string-array>
+
+    <string-array name="transportation_options">
+        <item>Diesel</item>
+        <item>Electric</item>
+        <item>Gasoline</item>
+        <item>Public transport</item>
+    </string-array>
+
+    <string-array name="waste_options">
+        <item>Paper waste</item>
+        <item>Plastic waste</item>
+        <item>Organic waste</item>
+    </string-array>
+
+</resources>
