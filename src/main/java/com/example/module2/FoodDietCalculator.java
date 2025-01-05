@@ -8,8 +8,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -19,7 +17,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -29,7 +26,6 @@ import android.widget.Toast;
 //import com.google.firebase.database.FirebaseDatabase;
 
 import android.app.DatePickerDialog;
-import android.widget.DatePicker;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -38,19 +34,15 @@ import androidx.room.Room;
 
 import com.github.mikephil.charting.charts.BarChart;
 
-import kotlinx.coroutines.Dispatchers;
-
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
-import java.util.Calendar;
 
 public class FoodDietCalculator extends Fragment {
 
     private FoodDietCalculatorViewModel mViewModel;
-    private MainActivity mainActivity;
+    private CalculatorMainActivity mainActivity;
     private FoodEmissionRecordDao foodEmissionRecordDao; // Declare as an instance field
 
     public static FoodDietCalculator newInstance() {
@@ -61,8 +53,8 @@ public class FoodDietCalculator extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         // Make sure MainActivity implements the interface
-        if (context instanceof MainActivity) {
-            mainActivity = (MainActivity) context;
+        if (context instanceof CalculatorMainActivity) {
+            mainActivity = (CalculatorMainActivity) context;
         }
     }
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1FFF3">
+
+    <!-- Green Block -->
+
+    <!-- Title -->
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="293dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/congrats_badge" />
+
+    <!-- Congratulatory Message -->
+    <TextView
+        android:id="@+id/congratsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="390dp"
+        android:gravity="center"
+        android:text="Congratulations!\nYou've completed all your goals!"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium" />
+
+    <!-- Return Button -->
+    <Button
+        android:id="@+id/afterCongratsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="460dp"
+        android:fontFamily="@font/poppins_medium"
+        android:backgroundTint="#00D09E"
+        android:text="Return" />
+</FrameLayout>

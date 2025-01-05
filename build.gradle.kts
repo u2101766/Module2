@@ -15,6 +15,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        multiDexEnabled = true
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -26,6 +28,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    buildFeatures{
+        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -43,11 +48,35 @@ dependencies {
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("com.github.PhilJay:MPAndroidChart:3.1.0")  // Or latest version
 
+    implementation("com.makeramen:roundedimageview:2.3.0")
+
+    implementation(libs.firebase.bom)
+    implementation(libs.multidex)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
+//    implementation(libs.firebase.auth)
+    implementation(libs.firebase.messaging)
+    implementation(libs.roundedimageview)
+    implementation(libs.intuit.sdp.android)
+    implementation(libs.ssp.android)
+    implementation(libs.firebase.firestore)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+
+    implementation(libs.multidex)
+    implementation(libs.firebase.messaging)
+    implementation(libs.roundedimageview)
+    implementation(libs.intuit.sdp.android)
+    implementation(libs.ssp.android)
 
     // Firebase dependencies
     implementation(platform(libs.firebase.bom)) // Firebase BOM for version management
@@ -60,6 +89,25 @@ dependencies {
     // Room dependencies
     implementation("androidx.room:room-runtime:2.5.2") // Core Room library
     annotationProcessor("androidx.room:room-compiler:2.5.2") // Annotation processor for Java
+
+
+    implementation(libs.firebase.bom)
+    implementation(libs.multidex)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.activity)
+    implementation(libs.constraintlayout)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.messaging)
+    implementation(libs.roundedimageview)
+    implementation(libs.intuit.sdp.android)
+    implementation(libs.ssp.android)
+    implementation(libs.firebase.firestore)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.ext.junit)
+    androidTestImplementation(libs.espresso.core)
+//    implementation("com.intuit.sdp:intuit-sdp-android:1.0.6")
+//    implementation("com.ssp:ssp-android:1.0.6")
 
 
 }

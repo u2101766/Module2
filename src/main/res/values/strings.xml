@@ -53,4 +53,16 @@
         <item>Organic waste</item>
     </string-array>
 
+    <string name="regapp_name">carbon user register</string>
+    <string name="Login">Login</string>
+    <string name="email">email\n</string>
+    <string name="password">password\n</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="click_to_register">Click to Register</string>
+    <string name="logout">Logout</string>
+    <string name="add_image">Add Image</string>
+    <string name="name">name</string>
+    <string name="confirm_password">confirm password</string>
+
 </resources>
